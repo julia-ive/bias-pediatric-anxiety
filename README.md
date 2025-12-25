@@ -22,7 +22,8 @@ This work demonstrates that:
 The repository provides notebooks:
 
 - **`Debias_Notes.ipynb`** — Implements our debiasing framework.  
-- **`Patient_Note_Classifier.ipynb`** — Runs model training, evaluation, and fairness assessment.  
+- **`Patient_Note_Classifier.ipynb`** — Runs model training, evaluation, and fairness assessment.
+- **`get_ber.py`** — script-style implementation to compute BER scores    
 - **`fake_notescsv** — Synthetic clinical note.
 
 ---
@@ -47,7 +48,11 @@ Implements:
 - BigBird token-length estimation  
 - BigBird + Logistic Regression classification  
 - Sex/ethnicity fairness evaluation  
-- Visualizations  
+- Visualizations
+
+### **3. get_ber.py** 
+
+Computes Balanced Error Rate (BER) for two demographic subgroups and reports the BER ratio to quantify fairness disparities. It resamples groups to equal size and evaluates whether one group experiences systematically higher error rates.
 
 ---
 
